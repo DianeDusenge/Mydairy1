@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.head {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/UI/Assets/b1.jpg");
+    background-size: cover;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    flex: 1 0 auto;
+    /* display: auto; */
+}
+
+nav li a {
+    display: block;
+    padding: -2px;
+    justify-content: end;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: right;
+    color: white;
+    margin-top: 30px;
+}
+
+.menu li a:hover {
+    color: rgb(20, 10, 34);
+    background-color: rgb(105, 147, 236);
+    color: #8d6448;
+    transition: background 2s;
+}
+
+.footer {
+    margin-top: 10px;
+    display: flex;
+    background-color: rgb(14, 13, 19);
+    height: 30vh;
+    color: white;
+}
+
+.footer ul {
+    display: flex;
+}
+
+.footer ul li {
+    list-style-type: none;
+    justify-content: end;
+    display: inline-block;
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.footer h3 {
+    font-size: 15px;
+    justify-content: center;
+}
+
+.footertwo {
+    font-size: 15px;
+    text-align: left;
+    margin-left: 700px;
+}
+
+.aboutentry {
+    border: 3px solid #f1f1f1;
+    width: 20%;
+    height: 65vh;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 18px;
+    background-color: black;
+    /* background-image: url(/UI/Assets/ab.jpg); */
+}
+
+.aboutentry button {
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 10px 60px;
+    background-color: rgb(238, 245, 110);
+}
+
+#bt {
+    height: 30px;
+    width: 120px;
+    text-align: center;
+    font-size: 15px;
+    /* background-color: rgb(220, 235, 240); */
+    border: 1px solid orange;
+    transition: background 2s;
+}
+
+#bt a {
+    text-decoration: none;
+    color: black;
+}
+
+#bt:hover {
+    background-color: rgb(248, 248, 247);
+}
+
+.views {
+    display: flex;
+    flex-wrap: wrap;
+    color: #000;
+    justify-content: flex-end;
+    font-size: 20px;
+    flex-direction: row;
+    margin-top: -400px;
+    margin-left: 200px;
+    color: white;
+    /* background-color: rgb(241, 225, 80); */
+}
+
+.view {
+    flex: 1;
+}
