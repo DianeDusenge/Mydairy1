@@ -12,8 +12,6 @@
                                                                                            .logo {
                                                                                                justify-content: flex-start;
                                                                                                margin-right: auto;
-                                                                                               /* height: 15%;
-                                                                            width: 20%; */
                                                                                            }
                                                                                            
                                                                                            .head {
@@ -39,10 +37,7 @@
                                                                                            nav li {
                                                                                                margin-right: 0px;
                                                                                                margin-left: auto;
-                                                                                               /* flex: 1 1 auto; */
                                                                                                margin: 10px;
-                                                                                               /* display: auto; */
-                                                                                               /* margin-left: 100px; */
                                                                                            }
                                                                                            
                                                                                            nav li a {
@@ -70,7 +65,7 @@
                                                                                                flex-direction: column;
                                                                                                align-items: center;
                                                                                                justify-content: center;
-                                                                                               font-size: 10px;
+                                                                                               font-size: 15px;
                                                                                                color: white;
                                                                                                text-align: center;
                                                                                                margin-top: 130px;
@@ -153,8 +148,9 @@
                                                                                                width: 120px;
                                                                                                text-align: center;
                                                                                                font-size: 15px;
-                                                                                               /* background-color: rgb(220, 235, 240); */
-                                                                                               border: 1px solid rgb(68, 58, 38);
+                                                                                               margin-top: 30px;
+                                                                                               background-color: rgb(220, 235, 240);
+                                                                                               border: 1px solid rgb(221, 166, 57);
                                                                                                transition: background 2s;
                                                                                            }
                                                                                            
@@ -164,7 +160,7 @@
                                                                                            }
                                                                                            
                                                                                            #bt:hover {
-                                                                                               background-color: rgb(248, 248, 247);
+                                                                                               background-color: rgb(143, 143, 38);
                                                                                            }
                                                                                            
                                                                                            .article:hover {
@@ -281,6 +277,15 @@
                                                                                                font-size: 18px;
                                                                                                background-image: url(/UI/Assets/ab.jpg);
                                                                                            }
+                                                                                           /* .aboutall {
+                                                                                               border: 3px solid #f1f1f1;
+                                                                                               width: auto;
+                                                                                               height: auto;
+                                                                                               margin-top: 50px;
+                                                                                               margin-left: 50px;
+                                                                                               font-size: 18px;
+                                                                                               background-color: black;
+                                                                                           } */
                                                                                            /* Bordered form */
                                                                                            
                                                                                            .formabout {
@@ -327,6 +332,7 @@
                                                                                                margin-left: 50px;
                                                                                                padding: 10px 60px;
                                                                                                background-color: rgb(50, 57, 80);
+                                                                                               border: none;
                                                                                            }
                                                                                            
                                                                                            .aboutentry button a {
@@ -347,7 +353,7 @@
                                                                                                width: 20%;
                                                                                                height: 65vh;
                                                                                                margin-top: 10px;
-                                                                                               margin-left: 5px;
+                                                                                               margin-left: 50px;
                                                                                                font-size: 18px;
                                                                                                background-color: black;
                                                                                                /* background-image: url(/UI/Assets/ab.jpg); */
@@ -358,7 +364,7 @@
                                                                                                width: 40%;
                                                                                                height: auto;
                                                                                                margin-top: -430px;
-                                                                                               margin-left: -230px;
+                                                                                               margin-left: -130px;
                                                                                                background-color: white;
                                                                                            }
                                                                                            
@@ -367,6 +373,7 @@
     margin-top: 20px; */
                                                                                                background-color: rgb(145, 122, 47);
                                                                                                color: white;
+                                                                                               /* margin-left: 400px; */
                                                                                            }
                                                                                            
                                                                                            .containeradd {
