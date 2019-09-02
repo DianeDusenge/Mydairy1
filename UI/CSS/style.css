@@ -1,427 +1,427 @@
-                                                                                               * {
-                                                                                               margin: 0;
-                                                                                               padding: 0;
-                                                                                           }
-                                                                                           
-                                                                                           body {
-                                                                                               background-attachment: fixed;
-                                                                                               background-position: center;
-                                                                                               background-repeat: no-repeat;
-                                                                                           }
-                                                                                           
-                                                                                           .logo {
-                                                                                               justify-content: flex-start;
-                                                                                               margin-right: auto;
-                                                                                               /* height: 15%;
+                                                                                                   * {
+                                                                                                       margin: 0;
+                                                                                                       padding: 0;
+                                                                                                   }
+                                                                                                   
+                                                                                                   body {
+                                                                                                       background-attachment: fixed;
+                                                                                                       background-position: center;
+                                                                                                       background-repeat: no-repeat;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .logo {
+                                                                                                       justify-content: flex-start;
+                                                                                                       margin-right: auto;
+                                                                                                       /* height: 15%;
                                                                             width: 20%; */
-                                                                                           }
-                                                                                           
-                                                                                           .head {
-                                                                                               height: 100vh;
-                                                                                               /* background-image: url("/UI/Assets/diane.gif"); */
-                                                                                               background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/UI/Assets/b1.jpg");
-                                                                                               background-size: cover;
-                                                                                           }
-                                                                                           
-                                                                                           .menu {
-                                                                                               display: flex;
-                                                                                               justify-content: flex-end;
-                                                                                               flex-wrap: wrap;
-                                                                                           }
-                                                                                           
-                                                                                           nav ul {
-                                                                                               list-style-type: none;
-                                                                                               /* display: flex; */
-                                                                                               justify-content: flex-end;
-                                                                                               flex-wrap: wrap;
-                                                                                           }
-                                                                                           
-                                                                                           nav li {
-                                                                                               margin-right: 0px;
-                                                                                               margin-left: auto;
-                                                                                               /* flex: 1 1 auto; */
-                                                                                               margin: 10px;
-                                                                                               /* display: auto; */
-                                                                                               /* margin-left: 100px; */
-                                                                                           }
-                                                                                           
-                                                                                           nav li a {
-                                                                                               display: block;
-                                                                                               padding: 10px 20px 10px 30px;
-                                                                                               justify-content: end;
-                                                                                               font-size: 15px;
-                                                                                               text-decoration: none;
-                                                                                               text-align: right;
-                                                                                               color: white;
-                                                                                               margin-top: 30px;
-                                                                                           }
-                                                                                           
-                                                                                           .menu li a:hover {
-                                                                                               color: rgb(20, 10, 34);
-                                                                                               background-color: rgb(105, 147, 236);
-                                                                                               color: #8d6448;
-                                                                                               transition: background 2s;
-                                                                                               /* padding: 0px auto; */
-                                                                                           }
-                                                                                           
-                                                                                           .main-content {
-                                                                                               height: 50vh;
-                                                                                               display: flex;
-                                                                                               flex-direction: column;
-                                                                                               align-items: center;
-                                                                                               justify-content: center;
-                                                                                               font-size: 10px;
-                                                                                               color: white;
-                                                                                               text-align: center;
-                                                                                               margin-top: 130px;
-                                                                                           }
-                                                                                           
-                                                                                           .articles {
-                                                                                               display: flex;
-                                                                                               flex-wrap: wrap;
-                                                                                               margin-top: 10px;
-                                                                                               color: rgba(61, 182, 142, 0.829);
-                                                                                               color: #000;
-                                                                                           }
-                                                                                           
-                                                                                           .article {
-                                                                                               flex: 1 1 300px;
-                                                                                               font-size: 20px;
-                                                                                               margin-left: 10px;
-                                                                                               /* background: rgb(192, 190, 100); */
-                                                                                               transition: background 2s;
-                                                                                           }
-                                                                                           
-                                                                                           .content1 {
-                                                                                               background: #FAFAD2;
-                                                                                               width: 10vw;
-                                                                                               border: 1px solid black;
-                                                                                               border-radius: 10%;
-                                                                                               text-align: center;
-                                                                                           }
-                                                                                           
-                                                                                           .content2 {
-                                                                                               background-image: #FAFAD2;
-                                                                                               width: 10vw;
-                                                                                               border: 1px solid black;
-                                                                                               border-radius: 10%;
-                                                                                               text-align: center;
-                                                                                           }
-                                                                                           
-                                                                                           .content3 {
-                                                                                               background: #FAFAD2;
-                                                                                               width: 10vw;
-                                                                                               border: 1px solid black;
-                                                                                               border-radius: 10%;
-                                                                                               text-align: center;
-                                                                                           }
-                                                                                           
-                                                                                           .footer {
-                                                                                               margin-top: 10px;
-                                                                                               display: flex;
-                                                                                               background-color: rgb(14, 13, 19);
-                                                                                               height: 30vh;
-                                                                                               color: white;
-                                                                                           }
-                                                                                           
-                                                                                           .footer ul {
-                                                                                               display: flex;
-                                                                                           }
-                                                                                           
-                                                                                           .footer ul li {
-                                                                                               list-style-type: none;
-                                                                                               justify-content: end;
-                                                                                               display: inline-block;
-                                                                                               padding: 20px;
-                                                                                               font-size: 15px;
-                                                                                               text-align: center;
-                                                                                           }
-                                                                                           
-                                                                                           .footer h3 {
-                                                                                               font-size: 15px;
-                                                                                               justify-content: center;
-                                                                                           }
-                                                                                           
-                                                                                           .footertwo {
-                                                                                               font-size: 15px;
-                                                                                               text-align: left;
-                                                                                               margin-left: 700px;
-                                                                                           }
-                                                                                           
-                                                                                           #bt {
-                                                                                               height: 30px;
-                                                                                               width: 120px;
-                                                                                               text-align: center;
-                                                                                               font-size: 15px;
-                                                                                               /* background-color: rgb(220, 235, 240); */
-                                                                                               border: 1px solid rgb(133, 106, 54);
-                                                                                               transition: background 2s;
-                                                                                               background-color: white;
-                                                                                           }
-                                                                                           
-                                                                                           #bt a {
-                                                                                               text-decoration: none;
-                                                                                               color: black;
-                                                                                           }
-                                                                                           
-                                                                                           #bt:hover {
-                                                                                               background-color: rgb(196, 196, 50);
-                                                                                           }
-                                                                                           
-                                                                                           .article:hover {
-                                                                                               background-color: rgb(233, 236, 186);
-                                                                                               background
-                                                                                           }
-                                                                                           /* login page */
-                                                                                           
-                                                                                           .loginform {
-                                                                                               border: 3px solid #f1f1f1;
-                                                                                               width: 35%;
-                                                                                               height: auto;
-                                                                                               margin-top: 50px;
-                                                                                               background-color: white;
-                                                                                               align-items: center;
-                                                                                           }
-                                                                                           
-                                                                                           .loginform input[type=text],
-                                                                                           .loginform input[type=password] {
-                                                                                               width: 70%;
-                                                                                               padding: 10px 2px;
-                                                                                               margin: 1px 0;
-                                                                                               display: inline-block;
-                                                                                               border: 1px solid rgb(241, 241, 241);
-                                                                                               box-sizing: border-box;
-                                                                                           }
-                                                                                           
-                                                                                           .container {
-                                                                                               align-items: center;
-                                                                                               margin-top: 20px;
-                                                                                           }
-                                                                                           /* input[type=button] */
-                                                                                           
-                                                                                           .loginform button {
-                                                                                               background-color: rgb(161, 161, 136);
-                                                                                               color: white;
-                                                                                               padding: 14px 20px;
-                                                                                               margin: 8px 0;
-                                                                                               border: none;
-                                                                                               cursor: pointer;
-                                                                                               width: 20%;
-                                                                                               align-items: left;
-                                                                                           }
-                                                                                           
-                                                                                           .loginform button a {
-                                                                                               text-decoration: none;
-                                                                                               list-style-type: none;
-                                                                                           }
-                                                                                           /* signup page */
-                                                                                           
-                                                                                           .formsignup {
-                                                                                               border: 3px solid #f1f1f1;
-                                                                                               width: 25%;
-                                                                                               height: auto;
-                                                                                               margin-top: 60px;
-                                                                                               background-color: white;
-                                                                                           }
-                                                                                           
-                                                                                           .formsignup input[type=text],
-                                                                                           .formsignup input[type=password] {
-                                                                                               width: 70%;
-                                                                                               padding: 12px 20px;
-                                                                                               margin: 2px 0;
-                                                                                               display: inline-block;
-                                                                                               border: 1px solid #ccc;
-                                                                                               box-sizing: border-box;
-                                                                                           }
-                                                                                           /* Set a style for all buttons */
-                                                                                           
-                                                                                           .formsignup button {
-                                                                                               background-color: rgb(161, 163, 115);
-                                                                                               color: white;
-                                                                                               padding: 14px 20px;
-                                                                                               margin: 8px 0;
-                                                                                               border: none;
-                                                                                               cursor: pointer;
-                                                                                               width: 50%;
-                                                                                               align-items: center;
-                                                                                               justify-content: center;
-                                                                                               text-decoration: none;
-                                                                                           }
-                                                                                           
-                                                                                           .formsignup button a {
-                                                                                               text-decoration: none;
-                                                                                               list-style-type: none;
-                                                                                           }
-                                                                                           /* about us page */
-                                                                                           
-                                                                                           .formabout input[type=text],
-                                                                                           .formabout input[type=password] {
-                                                                                               width: 70%;
-                                                                                               padding: 20px 20px;
-                                                                                               margin: 2px 0;
-                                                                                               margin-top: -50px;
-                                                                                               display: inline-block;
-                                                                                               border: 1px solid #ccc;
-                                                                                               box-sizing: border-box;
-                                                                                           }
-                                                                                           /* Set a style for all buttons */
-                                                                                           
-                                                                                           .formabout button {
-                                                                                               margin-top: 10px;
-                                                                                               margin-left: 50px;
-                                                                                               padding: 10px 60px;
-                                                                                               border-radius: 30%;
-                                                                                               background-color: rgb(80, 83, 31);
-                                                                                           }
-                                                                                           
-                                                                                           .about {
-                                                                                               border: 3px solid #f1f1f1;
-                                                                                               width: 45%;
-                                                                                               height: auto;
-                                                                                               margin-top: 50px;
-                                                                                               margin-left: 50px;
-                                                                                               font-size: 18px;
-                                                                                               background-image: url(/UI/Assets/ab.jpg);
-                                                                                           }
-                                                                                           /* Bordered form */
-                                                                                           
-                                                                                           .formabout {
-                                                                                               border: 3px solid #f1f1f1;
-                                                                                               width: 40%;
-                                                                                               height: 50vh;
-                                                                                               margin-top: -430px;
-                                                                                               margin-left: 550px;
-                                                                                               background-color: white;
-                                                                                           }
-                                                                                           
-                                                                                           .containerabout {
-                                                                                               align-items: center;
-                                                                                               margin-top: 20px;
-                                                                                           }
-                                                                                           
-                                                                                           .containerabout1 {
-                                                                                               align-items: center;
-                                                                                               margin-top: 20px;
-                                                                                           }
-                                                                                           
-                                                                                           .containerabout2 {
-                                                                                               text-align: center;
-                                                                                               align-items: center;
-                                                                                               margin-top: 20px;
-                                                                                               /* width: 20%;*/
-                                                                                               /* height: 60vh; */
-                                                                                           }
-                                                                                           /* entry */
-                                                                                           
-                                                                                           .formentry input[type=text],
-                                                                                           .formentry input[type=password] {
-                                                                                               width: 70%;
-                                                                                               padding: 20px 20px;
-                                                                                               margin: 2px 0;
-                                                                                               margin-top: -50px;
-                                                                                               display: inline-block;
-                                                                                               border: 1px solid #ccc;
-                                                                                               box-sizing: border-box;
-                                                                                           }
-                                                                                           
-                                                                                           .aboutentry button {
-                                                                                               margin-top: 10px;
-                                                                                               margin-left: 50px;
-                                                                                               padding: 10px 60px;
-                                                                                               background-color: rgb(50, 57, 80);
-                                                                                           }
-                                                                                           
-                                                                                           .aboutentry button a {
-                                                                                               text-decoration: none;
-                                                                                               list-style-type: none;
-                                                                                               color: white;
-                                                                                           }
-                                                                                           
-                                                                                           .formentry button {
-                                                                                               /* margin-top: 10px; */
-                                                                                               margin-left: 50px;
-                                                                                               padding: 10px 60px;
-                                                                                               background-color: rgb(128, 129, 99);
-                                                                                           }
-                                                                                           
-                                                                                           .aboutentry {
-                                                                                               border: 3px solid #f1f1f1;
-                                                                                               width: 20%;
-                                                                                               height: 65vh;
-                                                                                               margin-top: 10px;
-                                                                                               margin-left: 5px;
-                                                                                               font-size: 18px;
-                                                                                               background-color: black;
-                                                                                               /* background-image: url(/UI/Assets/ab.jpg); */
-                                                                                           }
-                                                                                           
-                                                                                           .formentry {
-                                                                                               border: 3px solid #f1f1f1;
-                                                                                               width: 40%;
-                                                                                               height: auto;
-                                                                                               margin-top: -430px;
-                                                                                               margin-left: -230px;
-                                                                                               background-color: white;
-                                                                                           }
-                                                                                           
-                                                                                           .containerentry {
-                                                                                               /* align-items: center;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .head {
+                                                                                                       height: 100vh;
+                                                                                                       /* background-image: url("/UI/Assets/diane.gif"); */
+                                                                                                       background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/UI/Assets/b1.jpg");
+                                                                                                       background-size: cover;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .menu {
+                                                                                                       display: flex;
+                                                                                                       justify-content: flex-end;
+                                                                                                       flex-wrap: wrap;
+                                                                                                   }
+                                                                                                   
+                                                                                                   nav ul {
+                                                                                                       list-style-type: none;
+                                                                                                       /* display: flex; */
+                                                                                                       justify-content: flex-end;
+                                                                                                       flex-wrap: wrap;
+                                                                                                   }
+                                                                                                   
+                                                                                                   nav li {
+                                                                                                       margin-right: 0px;
+                                                                                                       margin-left: auto;
+                                                                                                       /* flex: 1 1 auto; */
+                                                                                                       margin: 10px;
+                                                                                                       /* display: auto; */
+                                                                                                       /* margin-left: 100px; */
+                                                                                                   }
+                                                                                                   
+                                                                                                   nav li a {
+                                                                                                       display: block;
+                                                                                                       padding: 10px 20px 10px 30px;
+                                                                                                       justify-content: end;
+                                                                                                       font-size: 15px;
+                                                                                                       text-decoration: none;
+                                                                                                       text-align: right;
+                                                                                                       color: white;
+                                                                                                       margin-top: 30px;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .menu li a:hover {
+                                                                                                       color: rgb(20, 10, 34);
+                                                                                                       background-color: rgb(105, 147, 236);
+                                                                                                       color: #8d6448;
+                                                                                                       transition: background 2s;
+                                                                                                       /* padding: 0px auto; */
+                                                                                                   }
+                                                                                                   
+                                                                                                   .main-content {
+                                                                                                       height: 50vh;
+                                                                                                       display: flex;
+                                                                                                       flex-direction: column;
+                                                                                                       align-items: center;
+                                                                                                       justify-content: center;
+                                                                                                       font-size: 10px;
+                                                                                                       color: white;
+                                                                                                       text-align: center;
+                                                                                                       margin-top: 130px;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .articles {
+                                                                                                       display: flex;
+                                                                                                       flex-wrap: wrap;
+                                                                                                       margin-top: 10px;
+                                                                                                       color: rgba(61, 182, 142, 0.829);
+                                                                                                       color: #000;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .article {
+                                                                                                       flex: 1 1 300px;
+                                                                                                       font-size: 20px;
+                                                                                                       margin-left: 10px;
+                                                                                                       /* background: rgb(192, 190, 100); */
+                                                                                                       transition: background 2s;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .content1 {
+                                                                                                       background: #FAFAD2;
+                                                                                                       width: 10vw;
+                                                                                                       border: 1px solid black;
+                                                                                                       border-radius: 10%;
+                                                                                                       text-align: center;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .content2 {
+                                                                                                       background-image: #FAFAD2;
+                                                                                                       width: 10vw;
+                                                                                                       border: 1px solid black;
+                                                                                                       border-radius: 10%;
+                                                                                                       text-align: center;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .content3 {
+                                                                                                       background: #FAFAD2;
+                                                                                                       width: 10vw;
+                                                                                                       border: 1px solid black;
+                                                                                                       border-radius: 10%;
+                                                                                                       text-align: center;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .footer {
+                                                                                                       margin-top: 10px;
+                                                                                                       display: flex;
+                                                                                                       background-color: rgb(14, 13, 19);
+                                                                                                       height: 30vh;
+                                                                                                       color: white;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .footer ul {
+                                                                                                       display: flex;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .footer ul li {
+                                                                                                       list-style-type: none;
+                                                                                                       justify-content: end;
+                                                                                                       display: inline-block;
+                                                                                                       padding: 20px;
+                                                                                                       font-size: 15px;
+                                                                                                       text-align: center;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .footer h3 {
+                                                                                                       font-size: 15px;
+                                                                                                       justify-content: center;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .footertwo {
+                                                                                                       font-size: 15px;
+                                                                                                       text-align: left;
+                                                                                                       margin-left: 700px;
+                                                                                                   }
+                                                                                                   
+                                                                                                   #bt {
+                                                                                                       height: 30px;
+                                                                                                       width: 120px;
+                                                                                                       text-align: center;
+                                                                                                       font-size: 15px;
+                                                                                                       /* background-color: rgb(220, 235, 240); */
+                                                                                                       border: 1px solid rgb(133, 106, 54);
+                                                                                                       transition: background 2s;
+                                                                                                       background-color: white;
+                                                                                                   }
+                                                                                                   
+                                                                                                   #bt a {
+                                                                                                       text-decoration: none;
+                                                                                                       color: black;
+                                                                                                   }
+                                                                                                   
+                                                                                                   #bt:hover {
+                                                                                                       background-color: rgb(196, 196, 50);
+                                                                                                   }
+                                                                                                   
+                                                                                                   .article:hover {
+                                                                                                       background-color: rgb(233, 236, 186);
+                                                                                                   }
+                                                                                                   /* login page */
+                                                                                                   
+                                                                                                   .loginform {
+                                                                                                       border: 3px solid #f1f1f1;
+                                                                                                       width: 35%;
+                                                                                                       height: auto;
+                                                                                                       margin-top: 50px;
+                                                                                                       background-color: white;
+                                                                                                       align-items: center;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .loginform input[type=text],
+                                                                                                   .loginform input[type=password] {
+                                                                                                       width: 70%;
+                                                                                                       padding: 10px 2px;
+                                                                                                       margin: 1px 0;
+                                                                                                       display: inline-block;
+                                                                                                       border: 1px solid rgb(241, 241, 241);
+                                                                                                       box-sizing: border-box;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .container {
+                                                                                                       align-items: center;
+                                                                                                       margin-top: 20px;
+                                                                                                   }
+                                                                                                   /* input[type=button] */
+                                                                                                   
+                                                                                                   .loginform button {
+                                                                                                       background-color: rgb(161, 161, 136);
+                                                                                                       color: white;
+                                                                                                       padding: 14px 20px;
+                                                                                                       margin: 8px 0;
+                                                                                                       border: none;
+                                                                                                       cursor: pointer;
+                                                                                                       width: 20%;
+                                                                                                       align-items: left;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .loginform button a {
+                                                                                                       text-decoration: none;
+                                                                                                       list-style-type: none;
+                                                                                                   }
+                                                                                                   /* signup page */
+                                                                                                   
+                                                                                                   .formsignup {
+                                                                                                       border: 3px solid #f1f1f1;
+                                                                                                       width: 25%;
+                                                                                                       height: auto;
+                                                                                                       margin-top: 60px;
+                                                                                                       background-color: white;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .formsignup input[type=text],
+                                                                                                   .formsignup input[type=password] {
+                                                                                                       width: 70%;
+                                                                                                       padding: 12px 20px;
+                                                                                                       margin: 2px 0;
+                                                                                                       display: inline-block;
+                                                                                                       border: 1px solid #ccc;
+                                                                                                       box-sizing: border-box;
+                                                                                                   }
+                                                                                                   /* Set a style for all buttons */
+                                                                                                   
+                                                                                                   .formsignup button {
+                                                                                                       background-color: rgb(161, 163, 115);
+                                                                                                       color: white;
+                                                                                                       padding: 14px 20px;
+                                                                                                       margin: 8px 0;
+                                                                                                       border: none;
+                                                                                                       cursor: pointer;
+                                                                                                       width: 50%;
+                                                                                                       align-items: center;
+                                                                                                       justify-content: center;
+                                                                                                       text-decoration: none;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .formsignup button a {
+                                                                                                       text-decoration: none;
+                                                                                                       list-style-type: none;
+                                                                                                   }
+                                                                                                   /* about us page */
+                                                                                                   
+                                                                                                   .formabout input[type=text],
+                                                                                                   .formabout input[type=password] {
+                                                                                                       width: 70%;
+                                                                                                       padding: 20px 20px;
+                                                                                                       margin: 2px 0;
+                                                                                                       margin-top: -50px;
+                                                                                                       display: inline-block;
+                                                                                                       border: 1px solid #ccc;
+                                                                                                       box-sizing: border-box;
+                                                                                                   }
+                                                                                                   /* Set a style for all buttons */
+                                                                                                   
+                                                                                                   .formabout button {
+                                                                                                       margin-top: 10px;
+                                                                                                       margin-left: 50px;
+                                                                                                       padding: 10px 60px;
+                                                                                                       border-radius: 30%;
+                                                                                                       background-color: rgb(80, 83, 31);
+                                                                                                   }
+                                                                                                   
+                                                                                                   .about {
+                                                                                                       border: 3px solid #f1f1f1;
+                                                                                                       width: 45%;
+                                                                                                       height: auto;
+                                                                                                       margin-top: 50px;
+                                                                                                       margin-left: 50px;
+                                                                                                       font-size: 18px;
+                                                                                                       background-image: url(/UI/Assets/ab.jpg);
+                                                                                                   }
+                                                                                                   /* Bordered form */
+                                                                                                   
+                                                                                                   .formabout {
+                                                                                                       border: 3px solid #f1f1f1;
+                                                                                                       width: 40%;
+                                                                                                       height: 50vh;
+                                                                                                       margin-top: -430px;
+                                                                                                       margin-left: 550px;
+                                                                                                       background-color: white;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .containerabout {
+                                                                                                       align-items: center;
+                                                                                                       margin-top: 20px;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .containerabout1 {
+                                                                                                       align-items: center;
+                                                                                                       margin-top: 20px;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .containerabout2 {
+                                                                                                       text-align: center;
+                                                                                                       align-items: center;
+                                                                                                       margin-top: 20px;
+                                                                                                       /* width: 20%;*/
+                                                                                                       /* height: 60vh; */
+                                                                                                   }
+                                                                                                   /* entry */
+                                                                                                   
+                                                                                                   .formentry input[type=text],
+                                                                                                   .formentry input[type=password] {
+                                                                                                       width: 70%;
+                                                                                                       padding: 20px 20px;
+                                                                                                       margin: 2px 0;
+                                                                                                       margin-top: -50px;
+                                                                                                       display: inline-block;
+                                                                                                       border: 1px solid #ccc;
+                                                                                                       box-sizing: border-box;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .aboutentry button {
+                                                                                                       margin-top: 10px;
+                                                                                                       margin-left: 50px;
+                                                                                                       padding: 10px 60px;
+                                                                                                       background-color: rgb(50, 57, 80);
+                                                                                                   }
+                                                                                                   
+                                                                                                   .aboutentry button a {
+                                                                                                       text-decoration: none;
+                                                                                                       list-style-type: none;
+                                                                                                       color: white;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .formentry button {
+                                                                                                       /* margin-top: 10px; */
+                                                                                                       margin-left: 50px;
+                                                                                                       padding: 10px 60px;
+                                                                                                       background-color: rgb(128, 129, 99);
+                                                                                                   }
+                                                                                                   
+                                                                                                   .aboutentry {
+                                                                                                       border: 3px solid #f1f1f1;
+                                                                                                       width: 20%;
+                                                                                                       height: 65vh;
+                                                                                                       margin-top: 10px;
+                                                                                                       margin-left: 5px;
+                                                                                                       font-size: 18px;
+                                                                                                       background-color: black;
+                                                                                                       /* background-image: url(/UI/Assets/ab.jpg); */
+                                                                                                   }
+                                                                                                   
+                                                                                                   .formentry {
+                                                                                                       border: 3px solid #f1f1f1;
+                                                                                                       width: 40%;
+                                                                                                       height: auto;
+                                                                                                       margin-top: -430px;
+                                                                                                       margin-left: -230px;
+                                                                                                       background-color: white;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .containerentry {
+                                                                                                       /* align-items: center;
     margin-top: 20px; */
-                                                                                               background-color: rgb(145, 122, 47);
-                                                                                               color: white;
-                                                                                           }
-                                                                                           
-                                                                                           .containeradd {
-                                                                                               align-items: center;
-                                                                                               margin-top: 40px;
-                                                                                           }
-                                                                                           
-                                                                                           .containerentry1 {
-                                                                                               align-items: center;
-                                                                                               margin-top: 20px;
-                                                                                               /* background-color: black; */
-                                                                                           }
-                                                                                           
-                                                                                           .containerentry4 {
-                                                                                               text-align: center;
-                                                                                               align-items: center;
-                                                                                               margin-top: 40px;
-                                                                                               background-color: rgb(199, 50, 50);
-                                                                                               /* width: 20%;*/
-                                                                                               /* height: 60vh; */
-                                                                                           }
-                                                                                           /* story */
-                                                                                           
-                                                                                           .content4 {
-                                                                                               margin-top: 20px;
-                                                                                               /* background: #FAFAD2; */
-                                                                                               width: 50vw;
-                                                                                               /* border: 1px solid black;
+                                                                                                       background-color: rgb(145, 122, 47);
+                                                                                                       color: white;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .containeradd {
+                                                                                                       align-items: center;
+                                                                                                       margin-top: 40px;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .containerentry1 {
+                                                                                                       align-items: center;
+                                                                                                       margin-top: 20px;
+                                                                                                       /* background-color: black; */
+                                                                                                   }
+                                                                                                   
+                                                                                                   .containerentry4 {
+                                                                                                       text-align: center;
+                                                                                                       align-items: center;
+                                                                                                       margin-top: 40px;
+                                                                                                       background-color: rgb(199, 50, 50);
+                                                                                                       /* width: 20%;*/
+                                                                                                       /* height: 60vh; */
+                                                                                                   }
+                                                                                                   /* story */
+                                                                                                   
+                                                                                                   .content4 {
+                                                                                                       margin-top: 20px;
+                                                                                                       /* background: #FAFAD2; */
+                                                                                                       width: 50vw;
+                                                                                                       /* border: 1px solid black;
                                                                                         border-radius: 10%; */
-                                                                                               text-align: center;
-                                                                                           }
-                                                                                           
-                                                                                           .content5 {
-                                                                                               width: 50vw;
-                                                                                               margin-left: 600px;
-                                                                                               text-align: center;
-                                                                                               margin-top: -300px;
-                                                                                               font-size: 15px;
-                                                                                           }
-                                                                                           /* view */
-                                                                                           
-                                                                                           .views {
-                                                                                               display: flex;
-                                                                                               flex-wrap: wrap;
-                                                                                               color: #000;
-                                                                                               justify-content: flex-end;
-                                                                                               font-size: 20px;
-                                                                                               flex-direction: row;
-                                                                                               margin-top: -400px;
-                                                                                               margin-left: 200px;
-                                                                                               color: white;
-                                                                                               /* background-color: rgb(241, 225, 80); */
-                                                                                           }
-                                                                                           
-                                                                                           .view {
-                                                                                               flex: 1;
+                                                                                                       text-align: center;
+                                                                                                   }
+                                                                                                   
+                                                                                                   .content5 {
+                                                                                                       width: 50vw;
+                                                                                                       margin-left: 600px;
+                                                                                                       text-align: center;
+                                                                                                       margin-top: -300px;
+                                                                                                       font-size: 15px;
+                                                                                                   }
+                                                                                                   /* view */
+                                                                                                   
+                                                                                                   .views {
+                                                                                                       display: flex;
+                                                                                                       flex-wrap: wrap;
+                                                                                                       color: #000;
+                                                                                                       justify-content: flex-end;
+                                                                                                       font-size: 20px;
+                                                                                                       flex-direction: row;
+                                                                                                       margin-top: -400px;
+                                                                                                       margin-left: 200px;
+                                                                                                       color: white;
+                                                                                                       /* background-color: rgb(241, 225, 80); */
+                                                                                                   }
+                                                                                                   
+                                                                                                   .view {
+                                                                                                       flex: 1;
+                                                                                                   }
