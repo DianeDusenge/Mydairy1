@@ -72,6 +72,7 @@
                                                                                                                                        color: white;
                                                                                                                                        text-align: center;
                                                                                                                                        margin-top: 130px;
+                                                                                                                                       font-size: 13px;
                                                                                                                                    }
                                                                                                                                    
                                                                                                                                    .articles {
@@ -155,6 +156,7 @@
                                                                                                                                        border: 1px solid rgb(133, 106, 54);
                                                                                                                                        transition: background 2s;
                                                                                                                                        background-color: white;
+                                                                                                                                       margin-top: 30px;
                                                                                                                                    }
                                                                                                                                    
                                                                                                                                    #bt a {
@@ -167,7 +169,7 @@
                                                                                                                                    }
                                                                                                                                    
                                                                                                                                    .article:hover {
-                                                                                                                                       background-color: rgb(233, 236, 186);
+                                                                                                                                       background-color: rgb(182, 182, 175);
                                                                                                                                    }
                                                                                                                                    /* login page */
                                                                                                                                    
