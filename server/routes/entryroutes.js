@@ -2,6 +2,7 @@ import express from 'express';
 import allEntries from '../controllers/getAll'
 import specificentry from '../controllers/specificentry'
 import addentry from '../controllers/addentry'
+import modifyentry from '../controllers/modifyentry'
 
 const router = express.Router();
 
@@ -10,6 +11,7 @@ const router = express.Router();
 router.get('/api/v1/entries', allEntries);
 router.get('/api/v1/entries/:entryId', specificentry);
 router.post('/api/v1/entries/', addentry);
+router.put('/api/v1/entries/:entryId', modifyentry);
 //     let found = data.find(function(item) {
 //         return item.id === parseInt(req.params.id);
 //     });
