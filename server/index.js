@@ -1,9 +1,12 @@
-// const express = require('express');
-// import bodyParser from 'body-parser';
 import express from 'express';
+import itemsRouter from './routes/entryroutes';
+import bodyParser from 'body-parser';
+
+
 const app = express();
-// app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
 const PORT = 3000;
 app.get('/', (req, res) => {
     return res.status(200).send({
@@ -11,9 +14,10 @@ app.get('/', (req, res) => {
         message: 'Welcome to system'
     });
 });
+//const itemsRouter
+app.use('/', itemsRouter);
 app.listen(3000, function() {
     console.log(`server is running on PORT ${PORT}`);
 });
-// const itemsRouter = require('./routes/items1');
-const itemsRouter = require('./routes/items1');
-app.use('/items', itemsRouter);
+
+export default app;
