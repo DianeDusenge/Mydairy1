@@ -16,6 +16,7 @@ const addentry = (req, res) => {
     entries.push(newItem);
 
     res.status(201).json(newItem);
+    // message: 'Entry added successful';
 };
 
 export default addentry;
