@@ -11,3 +11,5 @@ const specificentry = (req, res) => {
     }
 };
 export default specificentry;
+
+// specificentry
