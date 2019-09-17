@@ -6,7 +6,7 @@ const modifyentry = (req, res) => {
 
     if (found) {
         let updated = {
-            id: found.entryId,
+            entryId: found.entryId,
             title: req.body.title,
             description: req.body.description,
             createdOn: new Date(),
