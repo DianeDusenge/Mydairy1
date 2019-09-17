@@ -6,6 +6,10 @@ import bodyParser from 'body-parser';
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+<<<<<<< HEAD
+=======
+
+>>>>>>> e9411e32b1067b5e4d02f5886db3a97aca3210e6
 const PORT = 3000;
 app.get('/', (req, res) => {
     return res.status(200).send({
