@@ -8,7 +8,6 @@
     },
     "scripts": {
         "build": "babel server -d build",
-        "dev": "nodemon index.js --exec babel-node --",
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "nodemon --exec babel-node ./server/index.js"
     },
