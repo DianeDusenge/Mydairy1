@@ -1,5 +1,5 @@
 import express from 'express';
-import itemsRouter from './server/routes/entryroutes';
+import itemsRouter from './routes/entryroutes';
 import bodyParser from 'body-parser';
 
 
