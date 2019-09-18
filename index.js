@@ -1,12 +1,12 @@
 import express from 'express';
-import itemsRouter from './routes/entryroutes';
+import itemsRouter from './server/routes/entryroutes';
 import bodyParser from 'body-parser';
 
 
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-const PORT = 3000;
+
 app.get('/', (req, res) => {
     return res.status(200).send({
         status: 200,
@@ -15,7 +15,9 @@ app.get('/', (req, res) => {
 });
 //const itemsRouter
 app.use('/', itemsRouter);
-app.listen(3000, function() {
+const PORT = process.env.PORT || 3100;
+
+app.listen(PORT, function() {
     console.log(`server is running on PORT ${PORT}`);
 });
 
