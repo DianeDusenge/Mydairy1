@@ -17,9 +17,27 @@ const modifyentry = (req, res) => {
 
         entries.splice(targetIndex, 1, updated);
 
-        res.sendStatus(204);
+        return res.status(204).send({
+            success: 'true',
+            message: ' entry updated successfully',
+            modifyentry
+        })
     } else {
-        res.sendStatus(404);
+        return res.status(404).send({
+            success: 'false',
+            description: 'the entry does not updated'
+        });
     }
 };
 export default modifyentry;
+// return res.status(204).send({
+//     success: 'true',
+//     message: ' entry updated successfully',
+//     modifyentry
+// })
+// }
+// else {
+//     return res.status(404).send({
+//         success: 'false',
+//         description: 'the entry does not updated'
+//     });
