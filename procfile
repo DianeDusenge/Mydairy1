@@ -1,1 +1,2 @@
 web: node build/index.js
+"start": "node ./server/index.js"
