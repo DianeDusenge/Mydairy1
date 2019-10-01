@@ -10,14 +10,30 @@
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
     },
-    "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaVersion": 2018,
         "sourceType": "module"
     },
-    "plugins": [
-        "@typescript-eslint"
-    ],
     "rules": {
+        "linebreak-style":"off",
+        "indent":"off",
+        "prefer-const":"off",
+        "arrow-parens":"off",
+        "prefer-spread":"off",
+        "no-unused-expressions":"off",
+        "comma-dangle":"off",
+        "no-else-return":"off",
+        "semi":"off",
+        "eol-last":"off",
+        "prefer-arrow-callback":"off",
+        "space-before-function-paren":"off",
+        "radix":"off",
+        "arrow-body-style":"off",
+        "no-undef":"off",
+        "quotes":"off",
+        "no-console":"off",
+        "func-names":"off"
+
+
     }
 }
