@@ -188,11 +188,12 @@
                                                                                                                                    .loginform input[type=password] {
                                                                                                                                        width: 70%;
                                                                                                                                        padding: 10px 2px;
-                                                                                                                                       margin: 1px 0;
+                                                                                                                                       margin: 4px 0;
                                                                                                                                        display: inline-block;
-                                                                                                                                       border: 1px solid rgb(241, 241, 241);
+                                                                                                                                       border: 1px solid rgb(110, 104, 104);
                                                                                                                                        box-sizing: border-box;
                                                                                                                                        color: black;
+                                                                                                                                       border-radius: 20px;
                                                                                                                                    }
                                                                                                                                    
                                                                                                                                    .container {
@@ -202,14 +203,15 @@
                                                                                                                                    /* input[type=button] */
                                                                                                                                    
                                                                                                                                    .loginform button {
-                                                                                                                                       background-color: rgb(161, 161, 136);
+                                                                                                                                       background-color: rgb(218, 218, 209);
                                                                                                                                        /* color: white; */
                                                                                                                                        padding: 14px 20px;
                                                                                                                                        margin: 8px 0;
                                                                                                                                        border: none;
                                                                                                                                        cursor: pointer;
-                                                                                                                                       width: 20%;
+                                                                                                                                       width: 45%;
                                                                                                                                        align-items: left;
+                                                                                                                                       border-radius: 20px;
                                                                                                                                        /* color: black; */
                                                                                                                                    }
                                                                                                                                    
@@ -217,6 +219,7 @@
                                                                                                                                        text-decoration: none;
                                                                                                                                        list-style-type: none;
                                                                                                                                        color: rgb(29, 29, 9);
+                                                                                                                                       border-radius: 20px;
                                                                                                                                    }
                                                                                                                                    /* signup page */
                                                                                                                                    
@@ -226,7 +229,7 @@
                                                                                                                                        height: auto;
                                                                                                                                        margin-top: 60px;
                                                                                                                                        background-color: white;
-                                                                                                                                       opacity: 0.5;
+                                                                                                                                       opacity: 0.7;
                                                                                                                                        font-size: 20px;
                                                                                                                                    }
                                                                                                                                    
@@ -234,15 +237,16 @@
                                                                                                                                    .formsignup input[type=password] {
                                                                                                                                        width: 70%;
                                                                                                                                        padding: 12px 20px;
-                                                                                                                                       margin: 2px 0;
+                                                                                                                                       margin: 4px 0;
                                                                                                                                        display: inline-block;
-                                                                                                                                       border: 1px solid #ccc;
+                                                                                                                                       border: 1px solid rgb(110, 104, 104);
                                                                                                                                        box-sizing: border-box;
+                                                                                                                                       border-radius: 20px;
                                                                                                                                    }
                                                                                                                                    /* Set a style for all buttons */
                                                                                                                                    
                                                                                                                                    .formsignup button {
-                                                                                                                                       background-color: rgb(161, 163, 115);
+                                                                                                                                       background-color: rgb(202, 202, 194);
                                                                                                                                        color: white;
                                                                                                                                        padding: 14px 20px;
                                                                                                                                        margin: 8px 0;
@@ -251,12 +255,13 @@
                                                                                                                                        width: 50%;
                                                                                                                                        align-items: center;
                                                                                                                                        justify-content: center;
-                                                                                                                                       text-decoration: none;
+                                                                                                                                       border-radius: 20px;
                                                                                                                                    }
                                                                                                                                    
                                                                                                                                    .formsignup button a {
                                                                                                                                        text-decoration: none;
                                                                                                                                        list-style-type: none;
+                                                                                                                                       color: black;
                                                                                                                                    }
                                                                                                                                    /* about us page */
                                                                                                                                    
