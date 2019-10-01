@@ -1,4 +1,5 @@
 import entries from '../models/entryModel';
+
 const modifyentry = (req, res) => {
     let found = entries.find(function(item) {
         return item.entryId === parseInt(req.params.entryId);
