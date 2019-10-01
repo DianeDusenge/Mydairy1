@@ -119,7 +119,7 @@
                                                                                                                                        margin-top: 10px;
                                                                                                                                        display: flex;
                                                                                                                                        background-color: rgb(14, 13, 19);
-                                                                                                                                       height: 30vh;
+                                                                                                                                       height: 28vh;
                                                                                                                                        color: white;
                                                                                                                                    }
                                                                                                                                    
@@ -435,14 +435,62 @@
                                                                                                                                        flex-wrap: wrap;
                                                                                                                                        color: #000;
                                                                                                                                        justify-content: flex-end;
-                                                                                                                                       font-size: 20px;
+                                                                                                                                       font-size: 18px;
                                                                                                                                        flex-direction: row;
-                                                                                                                                       margin-top: -400px;
-                                                                                                                                       margin-left: 200px;
+                                                                                                                                       margin-top: -1000px;
+                                                                                                                                       margin-left: 10px;
                                                                                                                                        color: white;
                                                                                                                                        /* background-color: rgb(241, 225, 80); */
                                                                                                                                    }
                                                                                                                                    
                                                                                                                                    .view {
                                                                                                                                        flex: 1;
+                                                                                                                                       text-align: center;
+                                                                                                                                   }
+                                                                                                                                   
+                                                                                                                                   .v1 {
+                                                                                                                                       background-color: #FAFAD2;
+                                                                                                                                       width: 8vw;
+                                                                                                                                       margin-top: 500px;
+                                                                                                                                       text-align: center;
+                                                                                                                                       color: black;
+                                                                                                                                   }
+                                                                                                                                   
+                                                                                                                                   .v2 {
+                                                                                                                                       background-color: #FAFAD2;
+                                                                                                                                       width: 8vw;
+                                                                                                                                       margin-top: 500px;
+                                                                                                                                       /* border: 1px solid black; */
+                                                                                                                                       /* border-radius: 10%; */
+                                                                                                                                       margin-left: 20px;
+                                                                                                                                       text-align: center;
+                                                                                                                                       color: black;
+                                                                                                                                   }
+                                                                                                                                   
+                                                                                                                                   .v3 {
+                                                                                                                                       background-color: #FAFAD2;
+                                                                                                                                       width: 8vw;
+                                                                                                                                       margin-top: 500px;
+                                                                                                                                       /* border: 1px solid black;
+                                                                                                                                       border-radius: 10%; */
+                                                                                                                                       margin-left: 20px;
+                                                                                                                                       text-align: center;
+                                                                                                                                       color: black;
+                                                                                                                                   }
+                                                                                                                                   
+                                                                                                                                   .views button {
+                                                                                                                                       background-color: rgb(161, 161, 136);
+                                                                                                                                       color: white;
+                                                                                                                                       padding: 14px 20px;
+                                                                                                                                       margin: 8px 0;
+                                                                                                                                       border: none;
+                                                                                                                                       cursor: pointer;
+                                                                                                                                       width: 20%;
+                                                                                                                                       align-items: left;
+                                                                                                                                   }
+                                                                                                                                   
+                                                                                                                                   .view a {
+                                                                                                                                       text-decoration: none;
+                                                                                                                                       list-style-type: none;
+                                                                                                                                       color: rgb(57, 162, 189);
                                                                                                                                    }
