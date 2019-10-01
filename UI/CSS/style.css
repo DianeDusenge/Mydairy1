@@ -93,17 +93,17 @@
                                                                                            }
                                                                                            
                                                                                            .content1 {
-                                                                                               background: #FAFAD2;
+                                                                                               background: rgb(238, 238, 207);
                                                                                                width: 10vw;
-                                                                                               border: 1px solid black;
-                                                                                               border-radius: 10%;
+                                                                                               /* border: 3px solid black; */
+                                                                                               border-radius: 1%;
                                                                                                text-align: center;
                                                                                            }
                                                                                            
                                                                                            .content2 {
                                                                                                background-image: #FAFAD2;
                                                                                                width: 10vw;
-                                                                                               border: 1px solid black;
+                                                                                               /* border: 1px solid black; */
                                                                                                border-radius: 10%;
                                                                                                text-align: center;
                                                                                            }
@@ -111,7 +111,7 @@
                                                                                            .content3 {
                                                                                                background: #FAFAD2;
                                                                                                width: 10vw;
-                                                                                               border: 1px solid black;
+                                                                                               /* border: 1px solid black; */
                                                                                                border-radius: 10%;
                                                                                                text-align: center;
                                                                                            }
@@ -120,7 +120,7 @@
                                                                                                margin-top: 10px;
                                                                                                display: flex;
                                                                                                background-color: rgb(14, 13, 19);
-                                                                                               height: 30vh;
+                                                                                               height: 15vh;
                                                                                                color: white;
                                                                                            }
                                                                                            
