@@ -180,7 +180,7 @@
                                                                                                                                        margin-top: 50px;
                                                                                                                                        background-color: white;
                                                                                                                                        align-items: center;
-                                                                                                                                       opacity: 0.5;
+                                                                                                                                       opacity: 0.7;
                                                                                                                                        font-size: 20px;
                                                                                                                                    }
                                                                                                                                    
@@ -192,6 +192,7 @@
                                                                                                                                        display: inline-block;
                                                                                                                                        border: 1px solid rgb(241, 241, 241);
                                                                                                                                        box-sizing: border-box;
+                                                                                                                                       color: black;
                                                                                                                                    }
                                                                                                                                    
                                                                                                                                    .container {
@@ -202,18 +203,20 @@
                                                                                                                                    
                                                                                                                                    .loginform button {
                                                                                                                                        background-color: rgb(161, 161, 136);
-                                                                                                                                       color: white;
+                                                                                                                                       /* color: white; */
                                                                                                                                        padding: 14px 20px;
                                                                                                                                        margin: 8px 0;
                                                                                                                                        border: none;
                                                                                                                                        cursor: pointer;
                                                                                                                                        width: 20%;
                                                                                                                                        align-items: left;
+                                                                                                                                       /* color: black; */
                                                                                                                                    }
                                                                                                                                    
                                                                                                                                    .loginform button a {
                                                                                                                                        text-decoration: none;
                                                                                                                                        list-style-type: none;
+                                                                                                                                       color: rgb(29, 29, 9);
                                                                                                                                    }
                                                                                                                                    /* signup page */
                                                                                                                                    
