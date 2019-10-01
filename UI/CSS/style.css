@@ -223,10 +223,11 @@
                                                                                            
                                                                                            .formsignup {
                                                                                                border: 3px solid #f1f1f1;
-                                                                                               width: 25%;
+                                                                                               width: 40%;
                                                                                                height: auto;
                                                                                                margin-top: 60px;
                                                                                                background-color: white;
+                                                                                               opacity: 0.8;
                                                                                            }
                                                                                            
                                                                                            .formsignup input[type=text],
@@ -235,13 +236,14 @@
                                                                                                padding: 12px 20px;
                                                                                                margin: 2px 0;
                                                                                                display: inline-block;
-                                                                                               border: 1px solid #ccc;
+                                                                                               border: 1px solid rgb(78, 75, 75);
                                                                                                box-sizing: border-box;
+                                                                                               border-radius: 20px;
                                                                                            }
                                                                                            /* Set a style for all buttons */
                                                                                            
                                                                                            .formsignup button {
-                                                                                               background-color: rgb(161, 163, 115);
+                                                                                               background-color: rgb(190, 190, 185);
                                                                                                color: white;
                                                                                                padding: 14px 20px;
                                                                                                margin: 8px 0;
@@ -251,11 +253,14 @@
                                                                                                align-items: center;
                                                                                                justify-content: center;
                                                                                                text-decoration: none;
+                                                                                               border-radius: 20px;
                                                                                            }
                                                                                            
                                                                                            .formsignup button a {
                                                                                                text-decoration: none;
                                                                                                list-style-type: none;
+                                                                                               border-radius: 20px;
+                                                                                               color: black;
                                                                                            }
                                                                                            /* about us page */
                                                                                            
