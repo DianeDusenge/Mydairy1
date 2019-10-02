@@ -1,4 +1,5 @@
 import entries from '../models/entryModel';
+
 const modifyentry = (req, res) => {
     let found = entries.find(function(item) {
         return item.entryId === parseInt(req.params.entryId);
@@ -34,7 +35,21 @@ const modifyentry = (req, res) => {
             modifyentry
         })
     } else {
-        res.sendStatus(404);
+        return res.status(404).send({
+            success: 'false',
+            description: 'the entry does not updated'
+        });
     }
 };
 export default modifyentry;
+// return res.status(204).send({
+//     success: 'true',
+//     message: ' entry updated successfully',
+//     modifyentry
+// })
+// }
+// else {
+//     return res.status(404).send({
+//         success: 'false',
+//         description: 'the entry does not updated'
+//     });

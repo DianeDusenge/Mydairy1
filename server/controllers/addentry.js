@@ -1,4 +1,5 @@
 import entries from '../models/entryModel';
+
 const addentry = (req, res) => {
     let itemIds = entries.map(item => item.entryId);
     // let orderNums = data.map(item => item.order);
@@ -8,7 +9,7 @@ const addentry = (req, res) => {
     if (!req.body.title) {
         return res.status(404).send({
             success: 'false',
-            descrition: 'title is required'
+            descrition: 'title is required',
         });
     } else if (!req.body.description) {
         return res.status(404).send({
