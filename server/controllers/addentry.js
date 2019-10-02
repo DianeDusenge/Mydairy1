@@ -6,14 +6,19 @@ const addentry = (req, res) => {
     let newId = itemIds.length > 0 ? Math.max.apply(Math, itemIds) + 1 : 1;
     // let newOrderNum = orderNums.length > 0 ? Math.max.apply(Math, orderNums) + 1 : 1;
     if (!req.body.title) {
-        return res.status(400).send({
+        return res.status(404).send({
             success: 'false',
             descrition: 'title is required'
         });
     } else if (!req.body.description) {
-        return res.status(400).send({
+        return res.status(404).send({
             success: 'false',
-            description: 'message is required'
+            description: 'Description is required'
+        });
+    } else if (!req.CreatedOn) {
+        return res.status(404).send({
+            success: 'false',
+            description: 'date is required'
         });
     }
 
@@ -35,34 +40,3 @@ const addentry = (req, res) => {
 };
 
 export default addentry;
-// import Models from '../Models/db';
-
-
-// const addentry = function(req, res) {
-//     if (!req.body.title) {
-//         return res.status(400).send({
-//             success: 'false',
-//             descrition: 'title is required'
-//         });
-//     } else if (!req.body.description) {
-//         return res.status(400).send({
-//             success: 'false',
-//             description: 'message is required'
-//         });
-//     }
-
-
-//     const addentry = {
-//         id: Models.length + 1,
-//         title: req.body.title,
-//         description: req.body.description
-//     }
-//     Models.push(addentry);
-//     return res.status(201).send({
-//         success: 'true',
-//         message: ' entry added successfully',
-//         addentry
-//     })
-// };
-
-// module.exports = addentry;
