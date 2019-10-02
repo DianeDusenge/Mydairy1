@@ -4,6 +4,17 @@ const modifyentry = (req, res) => {
     let found = entries.find(function(item) {
         return item.entryId === parseInt(req.params.entryId);
     });
+    if (!req.body.title) {
+        return res.status(404).send({
+            success: 'false',
+            descrition: 'title is required'
+        });
+    } else if (!req.body.description) {
+        return res.status(404).send({
+            success: 'false',
+            description: 'Description is required'
+        });
+    }
 
     if (found) {
         let updated = {
@@ -18,9 +29,9 @@ const modifyentry = (req, res) => {
 
         entries.splice(targetIndex, 1, updated);
 
-        return res.status(204).send({
+        return res.status(201).send({
             success: 'true',
-            message: ' entry updated successfully',
+            message: ' entry modified successfully',
             modifyentry
         })
     } else {
