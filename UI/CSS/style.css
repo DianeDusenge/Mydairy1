@@ -281,18 +281,24 @@
                                                                                                                                        margin-top: 10px;
                                                                                                                                        margin-left: 50px;
                                                                                                                                        padding: 10px 60px;
-                                                                                                                                       border-radius: 30%;
-                                                                                                                                       background-color: rgb(80, 83, 31);
+                                                                                                                                       border-radius: 30px;
+                                                                                                                                       background-color: rgb(205, 206, 182);
+                                                                                                                                   }
+                                                                                                                                   
+                                                                                                                                   .formabout button a {
+                                                                                                                                       text-decoration: none;
+                                                                                                                                       color: black;
                                                                                                                                    }
                                                                                                                                    
                                                                                                                                    .about {
                                                                                                                                        border: 3px solid #f1f1f1;
-                                                                                                                                       width: 45%;
+                                                                                                                                       width: 35%;
                                                                                                                                        height: auto;
                                                                                                                                        margin-top: 50px;
                                                                                                                                        margin-left: 50px;
                                                                                                                                        font-size: 18px;
-                                                                                                                                       background-image: url(../Assets/ab.jpg);
+                                                                                                                                       /* background-image: url(../Assets/ab.jpg); */
+                                                                                                                                       background-color: white;
                                                                                                                                    }
                                                                                                                                    /* Bordered form */
                                                                                                                                    
@@ -300,7 +306,7 @@
                                                                                                                                        border: 3px solid #f1f1f1;
                                                                                                                                        width: 40%;
                                                                                                                                        height: 50vh;
-                                                                                                                                       margin-top: -430px;
+                                                                                                                                       margin-top: -380px;
                                                                                                                                        margin-left: 550px;
                                                                                                                                        background-color: white;
                                                                                                                                    }
@@ -355,7 +361,7 @@
                                                                                                                                        /* margin-top: 10px; */
                                                                                                                                        margin-left: 50px;
                                                                                                                                        padding: 10px 60px;
-                                                                                                                                       background-color: rgb(128, 129, 99);
+                                                                                                                                       background-color: rgb(214, 214, 199);
                                                                                                                                    }
                                                                                                                                    
                                                                                                                                    .aboutentry {
@@ -407,7 +413,7 @@
                                                                                                                                    /* story */
                                                                                                                                    
                                                                                                                                    .content4 {
-                                                                                                                                       margin-top: 20px;
+                                                                                                                                       margin-top: -700px;
                                                                                                                                        /* background: #FAFAD2; */
                                                                                                                                        width: 50vw;
                                                                                                                                        /* border: 1px solid black;
@@ -420,7 +426,8 @@
                                                                                                                                        margin-left: 600px;
                                                                                                                                        text-align: center;
                                                                                                                                        margin-top: -300px;
-                                                                                                                                       font-size: 15px;
+                                                                                                                                       font-size: 20px;
+                                                                                                                                       color: white;
                                                                                                                                    }
                                                                                                                                    /* view */
                                                                                                                                    
