@@ -15,8 +15,9 @@
 }*/
 
 .container {
-    background-size: cover;
-    background-image: url("/UI/Assets/b1.jpg");
+    /* background-size: cover; */
+    /* background-image: url("/UI/Assets/b1.jpg"); */
+    background-color: rgb(39, 37, 7);
     background-size: cover;
     width: 100%;
     height: 100vh;
