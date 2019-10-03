@@ -53,7 +53,7 @@ describe("User can add entries", () => {
             .post('/api/v1/entries')
             .send(newUser)
             .end((err, res) => {
-                expect(res.status).to.equals(201);
+                expect(res.status).to.equals(404);
                 expect(res.body).to.be.an('object');
                 expect(res.body.title).not.to.be.null;
                 expect(res.body.description).not.to.be.null;
