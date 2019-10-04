@@ -1,21 +1,25 @@
+import validation from '../validate/validation';
 import entries from '../models/entryModel';
 
 const modifyentry = (req, res) => {
     let found = entries.find(function(item) {
         return item.entryId === parseInt(req.params.entryId);
     });
-    if (!req.body.title) {
-        return res.status(404).send({
-            success: 'false',
-            descrition: 'title is required'
-        });
-    } else if (!req.body.description) {
-        return res.status(404).send({
-            success: 'false',
-            description: 'Description is required'
-        });
+    // if (!req.body.title) {
+    //     return res.status(404).send({
+    //         success: 'false',
+    //         descrition: 'title is required'
+    //     });
+    // } else if (!req.body.description) {
+    //     return res.status(404).send({
+    //         success: 'false',
+    //         description: 'Description is required'
+    //     });
+    // }
+    const { error } = validation.validate(req.body);
+    if (error) {
+        return res.status(400).json({ status: 400, error: error.details[0].message });
     }
-
     if (found) {
         let updated = {
             entryId: found.entryId,
@@ -37,7 +41,7 @@ const modifyentry = (req, res) => {
     } else {
         return res.status(404).send({
             success: 'false',
-            description: 'the entry does not updated'
+            description: 'the entry does not exist'
         });
     }
 };

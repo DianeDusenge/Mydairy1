@@ -3,8 +3,8 @@ const validation = {
     validate(addentry) {
         const newItem = {
 
-            title: joi.string().required(),
-            description: joi.string().required(),
+            title: joi.string().trim().required(),
+            description: joi.string().trim().required(),
             // CreatedOn: joi.string().required(),
         };
         return joi.validate(addentry, newItem);
