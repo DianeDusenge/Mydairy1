@@ -3,18 +3,22 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
+    "engines": {
+        "node": "10.16.3"
+    },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "nodemon --exec babel-node index.js"
+        "build": "babel server -d build",
+        "dev": "nodemon --exec babel-node ./server/index.js",
+        "start": "node build/index.js",
+        "test": "nyc --reporter=html --reporter=text mocha --require @babel/register test/test.js --exit",
+        "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
     },
     "author": "Diane D",
     "license": "ISC",
     "dependencies": {
-        "@babel/cli": "^7.6.0",
-        "@babel/core": "^7.6.0",
-        "@babel/node": "^7.6.1",
-        "@babel/preset-env": "^7.6.0",
         "body-parser": "^1.19.0",
+        "chai": "^4.2.0",
+        "chai-http": "^4.3.0",
         "dotenv": "^8.1.0",
         "express": "^4.17.1",
         "joi": "^14.3.1"
@@ -22,6 +26,7 @@
     "devDependencies": {
         "coveralls": "^3.0.6",
         "nodemon": "^1.19.2",
-        "nyc": "^14.1.1"
+        "nyc": "^14.1.1",
+        "mocha": "^6.2.1"
     }
 }
