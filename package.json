@@ -1,29 +1,4 @@
 {
-<<<<<<< HEAD
-  "name": "mydairy1",
-  "version": "1.0.0",
-  "description": "This is my Dairy website that help user to write their journal",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DianeDusenge/Mydairy1.git"
-  },
-  "author": "Diane Dusenge",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/DianeDusenge/Mydairy1/issues"
-  },
-  "homepage": "https://github.com/DianeDusenge/Mydairy1#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  },
-  "devDependencies": {
-    "nodemon": "^1.19.2"
-  }
-=======
     "name": "server",
     "version": "1.0.0",
     "description": "",
@@ -45,5 +20,4 @@
     "devDependencies": {
         "nodemon": "^1.19.2"
     }
->>>>>>> 17ed313ca0be5b873d8ed95e76b1249db27599d6
 }
