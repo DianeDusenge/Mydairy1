@@ -1,5 +1,5 @@
 import validation from '../validate/validation';
-import entries from '../models/entryModel';
+import entries from '../models/db';
 
 const modifyentry = (req, res) => {
     let found = entries.find(function(item) {

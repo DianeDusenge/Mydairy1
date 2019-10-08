@@ -1,5 +1,5 @@
 import validation from '../validate/validation';
-import entries from '../models/entryModel';
+import entries from '../models/db';
 
 const addentry = (req, res) => {
     let itemIds = entries.map(item => item.entryId);

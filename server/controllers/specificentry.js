@@ -1,4 +1,4 @@
-import entryModel from '../models/entryModel';
+import entryModel from '../models/db';
 const specificentry = (req, res) => {
     let found = entryModel.find(function(item) {
         return item.entryId === parseInt(req.params.entryId);
