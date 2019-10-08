@@ -11,8 +11,8 @@ const router = express.Router();
 
 router.get('/api/v1/entries', allEntries);
 router.get('/api/v1/entries/:entryId', specificentry);
-router.post('/api/v1/entries/', validator.validateString, addentry);
-router.put('/api/v1/entries/:entryId', validator.validateString, modifyentry);
+router.post('/api/v1/entries/', addentry);
+router.put('/api/v1/entries/:entryId', modifyentry);
 //     let found = data.find(function(item) {
 //         return item.id === parseInt(req.params.id);
 //     });
