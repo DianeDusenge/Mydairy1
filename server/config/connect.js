@@ -26,11 +26,29 @@ const createTables = () => {
           id SERIAL PRIMARY KEY,
           title VARCHAR(128) NOT NULL,
           description VARCHAR(130) NOT NULL,
-         CreatedOn VARCHAR(120) NOT NULL
+          createdon VARCHAR(120) NOT NULL
           
         )`;
-    pool.query(Myentries)
-        .then((res) => {
+    const Myinfo = `CREATE TABLE IF NOT EXISTS
+        login(
+          id SERIAL PRIMARY KEY,
+          Username VARCHAR(128) NOT NULL,
+          Password VARCHAR(130) NOT NULL
+          
+        )`;
+    const Myentrysignup = `CREATE TABLE IF NOT EXISTS
+        signup(
+          id SERIAL PRIMARY KEY,
+          Allnames VARCHAR(128) NOT NULL,
+          Email VARCHAR(128) NOT NULL,
+          Username VARCHAR(128) NOT NULL,
+          Password VARCHAR(130) NOT NULL
+        
+          
+        )`;
+    const queries = `${Myentries};${Myinfo};${Myentrysignup}`;
+    // pool.query(Myentries)
+    pool.query(queries).then((res) => {
             console.log(res);
             pool.end();
         })
@@ -39,14 +57,15 @@ const createTables = () => {
             pool.end();
         });
 };
+
+
 pool.on('remove', () => {
     console.log('client removed');
-    process.exit(0);
 });
 
 
 
-module.exports = {
+export {
     pool,
     createTables
 };
