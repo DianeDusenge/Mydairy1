@@ -16,7 +16,7 @@ const router = express.Router();
 router.get('/api/v1/entries', allEntries);
 router.get('/api/v1/entries/:id', specificentry);
 router.post('/api/v1/entries/', addentry);
-router.put('/api/v1/entries/:entryId', modifyentry);
+router.put('/api/v1/entries/:id', modifyentry);
 router.post('/api/v1/signup/', addUser);
 router.post('/api/v1/signin/', signin);
 //     let found = data.find(function(item) {
