@@ -23,7 +23,7 @@ const allEntries = async(req, res) => {
     } else {
         return res.status(200).send({
             status: 200,
-            message: 'Entries retrieved Succesfully',
+            message: 'Data retrieved Succesfully',
             users: result.rows,
         });
 
