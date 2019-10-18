@@ -1,7 +1,9 @@
 import joi from 'joi';
 const validation = {
     // validateString(req, res, next) {
+
     //     const testString = /^[a-zA-z]+$/.test(req.body.title.toString());
+
     //     console.log(testString)
     //     if (!testString) return res.status(400).send('error!! you are allowed to use string only');
     //     return next();
