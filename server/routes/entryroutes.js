@@ -1,17 +1,24 @@
 import express from 'express';
-import allEntries from '../controllers/getAll'
-import specificentry from '../controllers/specificentry'
-import addentry from '../controllers/addentry'
-import modifyentry from '../controllers/modifyentry'
+import allEntries from '../controllers/getAll';
+import specificentry from '../controllers/specificentry';
+import addentry from '../controllers/addentry';
+import modifyentry from '../controllers/modifyentry';
+import {
+    addUser,
+    signin
+} from '../controllers/userscontrollers';
+// import validator from '../validate/validation'
 
 const router = express.Router();
 
 
 
 router.get('/api/v1/entries', allEntries);
-router.get('/api/v1/entries/:entryId', specificentry);
+router.get('/api/v1/entries/:id', specificentry);
 router.post('/api/v1/entries/', addentry);
-router.put('/api/v1/entries/:entryId', modifyentry);
+router.put('/api/v1/entries/:id', modifyentry);
+router.post('/api/v1/signup/', addUser);
+router.post('/api/v1/signin/', signin);
 //     let found = data.find(function(item) {
 //         return item.id === parseInt(req.params.id);
 //     });

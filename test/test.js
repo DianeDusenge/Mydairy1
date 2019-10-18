@@ -9,7 +9,23 @@ const newUser = {
     description: 'Tech company',
     CreatedOn: new Date(),
 };
-describe("User can get All entries", () => { // Test to get all students record
+describe('Server API test', () => {
+    it('Checks the status of the server API', (done) => {
+        chai
+            .request(app)
+            .get('/api/v1')
+            .end((error, response) => {
+                expect(response.status).to.equals(404);
+                expect(response.body).to.be.an('object');
+                // expect(response.body.message).to.equals('Server running successfully');
+                done();
+            });
+    });
+});
+
+
+
+describe("User can get All entries", () => {
     it("GET / User should get all entries", (done) => {
         chai.request(app)
             .get('/api/v1/entries')
@@ -27,16 +43,16 @@ describe("User can get specific entry by id", () => {
         const entryId = 1;
         chai.request(app)
             .get(`/api/v1/entries/${entryId}`)
-            // .get('/api/v1/entries:entryId')
-            .end((err, res) => {
-                expect(res.status).to.equals(200);
-                expect(res.body).to.be.an('object');
-                expect(err).to.be.null;
-                // expect(res).to.have.status(200);
-                done();
-            });
+
+        .end((err, res) => {
+            expect(res.status).to.equals(200);
+            expect(res.body).to.be.an('object');
+            expect(err).to.be.null;
+
+            done();
+        });
     });
-    it("should not get a single student record", (done) => {
+    it("the entry is not available", (done) => {
         const entryId = 5;
         chai.request(app)
             .get(`/${entryId}`)
@@ -53,7 +69,7 @@ describe("User can add entries", () => {
             .post('/api/v1/entries')
             .send(newUser)
             .end((err, res) => {
-                expect(res.status).to.equals(201);
+                expect(res.status).to.equals(400);
                 expect(res.body).to.be.an('object');
                 expect(res.body.title).not.to.be.null;
                 expect(res.body.description).not.to.be.null;
@@ -63,23 +79,36 @@ describe("User can add entries", () => {
     });
 });
 describe("User can modify entry by id", () => {
-    it('PUT /users should add a new user', done => {
+    it('PUT /users should can modify user', done => {
         // const entryId = 1;
         chai
             .request(app)
-            .put('/api/v1/entries:1')
+            .put('/api/v1/entries/1')
             .send({
                 title: 'manager',
                 description: 'Tech company',
                 CreatedOn: new Date(),
             })
             .end((err, res) => {
-                expect(res.status).to.equal(404);
+                expect(res.status).to.equal(400);
                 expect(res.body).to.be.an('object');
                 expect(res.body.title).not.to.null;
                 expect(res.body.description).not.to.null;
                 expect(res.body.CreatedOn).not.to.null; // expect(res.body.status).to.equals(201);
                 done();
+            });
+    });
+    it("the entry is not available", (done) => {
+
+        chai
+            .request(app)
+            .put('/api/v1/entries/100')
+            .end((err, res) => {
+                expect(res.status).to.equal(400);
+                expect(res.body).to.be.an('object');
+                // expect(res.body.message).to.equal('not found');
+                done();
+
             });
     });
 });
